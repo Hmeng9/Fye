@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+body {
+    background-color: #f1ebff;
+    text-align: center;
+}
+
+#myForm {
+    font-size: 20px;
+}
+
+#myLogin {
+    font-size: 24px;
+}
+
+#Topic {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 60px;
+}
+
+#Regisform {
+    background-color: #e4d6ff;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#Loginform {
+    background-color: #e4d6ff;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.button {
+    font-family: 'DotGothic16', sans-serif;
+}

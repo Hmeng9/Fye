@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    padding: 30px 0;
+    z-index: 999;
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.sticky {
+    padding: 15px 0;
+    background: #b34766;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .menu li a:hover {
+    color: #b34766;
+}
+
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar .logo a span {
+    color: #ffd9e4;
+}
+
+.navbar .sticky .logo a span {
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.home {
+    display: flex;
+    background: url("ฝฝ.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600px;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: #b34766;
+    font-weight: 500;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.about {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.about .title {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "Who I am";
+    position: absolute;
+    background: #fff;
+    bottom: 25px;
+    left: 50%;
+    font-size: 20px;
+    color: #b34766;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: #b34766;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.skills {
+    font-family: 'Noto Sans TC', sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+.skills .title {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 40px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.skills .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills .title::after {
+    content: "What I Know";
+    position: absolute;
+    background: #111;
+    bottom: 23px;
+    left: 50%;
+    font-size: 20px;
+    color: #b34766;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.skills .skills-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.skills .skills-content .card {
+    width: calc(50% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .card:hover {
+    background: #b34766;
+}
+
+.skills .skills-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.skills .skills-content .card:hover .skills-icon {
+    color: #fff;
+}
+
+.skills-icon {
+    font-size: 50px;
+    color: #b34766;
+    padding: 16px;
+    transition: color 0.3s ease;
+}
+
+.skills .skills-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.teams .title {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.teams .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teams .title::after {
+    content: "Who's with me";
+    position: absolute;
+    background: #fff;
+    bottom: 25px;
+    left: 50%;
+    font-size: 20px;
+    color: #b34766;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.teams .teams-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.teams .teams-content .card {
+    width: calc(50% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.teams .teams-content .card .box .First {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #b34766;
+}
+
+.teams .teams-content .card .box .Aon {
+    width: 200px;
+    height: 210px;
+    /* object-fit: cover; */
+    border-radius: 50%;
+    border: 5px solid #b34766;
+}
+
+.teams .teams-content .card .box a {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.teams .teams-content .card .box a span {
+    font-size: 12px;
+    background-color: #fff;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.teams .teams-content .card:hover {
+    background: #b34766;
+}
+
+.teams .teams-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.teams .teams-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .teams-content .card:hover .First,
+.teams .teams-content .card:hover .Aon {
+    border: 5px solid #fff;
+}
+
+.project {
+    font-family: 'Noto Sans TC', sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+.project .title {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 40px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.project .title::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project .title::after {
+    content: "It's has been done";
+    position: absolute;
+    background: #111;
+    bottom: 23px;
+    left: 50%;
+    font-size: 20px;
+    color: #b34766;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.project .project-btn {
+    text-align: center;
+}
+
+.project .project-btn a {
+    color: #111;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.project .project-btn a:hover {
+    background-color: #b34766;
+    transition: all 0.3s ease;
+}
+
+.assignment {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.assignment .title {
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.assignment .title::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 3px;
+    background: #111;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.assignment .title::after {
+    content: "HTML CSS Javascript";
+    position: absolute;
+    background: #fff;
+    bottom: 23px;
+    left: 50%;
+    font-size: 20px;
+    color: #b34766;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.assignment .assignment-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.assignment .assignment-content .card {
+    width: calc(50% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0px;
+}
+
+.assignment .assignment-content .card .box p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.assignment .assignment-content .card .box .assignment-btn {
+    margin: 10px;
+}
+
+.assignment .assignment-content .card .box .assignment-btn a {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.assignment .assignment-content .card:hover {
+    background: #b34766;
+}
+
+.assignment .assignment-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.assignment .assignment-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.assignment .assignment-content .card .box .as4 {
+    width: 500px;
+}
+
+.assignment .assignment-content .card .box .as5 {
+    width: 420px;
+}
+
+.assignment .assignment-content .card .box .as6 {
+    width: 500px;
+}
+
+.assignment .assignment-content .card .box .as7 {
+    width: 397px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer .max-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+}
+
+footer p a {
+    color: #b34766;
+}
+
+footer div span {
+    color: white;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+footer div span a {
+    color: white;
+    font-size: 25px;
+}
+
+footer div span a:hover {
+    color: #b34766;
+    transition: all 0.3s ease;
+}
+
+.assignment .assignment-content .card .box .cloud {
+    width: 500px;
+}
+
+.assignment .assignment-content .card .box .game {
+    width: 150px;
+}
+
+.assignment .assignment-content .card .box .nsc {
+    width: 465px;
+}
+
+.assignment .assignment-content .card .box .snickers {
+    width: 510px;
+    object-fit: cover;
+}
+
+.assignment .assignment-content .card .box .sticker {
+    width: 397px;
+    object-fit: cover;
+}
+
+.assignment .assignment-content .card .box .medium {
+    width: 268px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:947px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0%;
+        text-align: center;
+        background: #111;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .about .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .about .about-content .right {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about .about-content .right .text {
+        text-align: center;
+    }
+    .about .about-content .right p {
+        text-align: center;
+    }
+    .skills .skills-content {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .skills .skills-content .card {
+        margin: 10px auto;
+    }
+    .teams .teams-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .teams .teams-content .card {
+        margin: 10px auto;
+    }
+    .assignment .assignment-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .assignment .assignment-content .card .box .as4 {
+        width: 300px;
+    }
+    .assignment .assignment-content .card .box .as5 {
+        width: 350px;
+    }
+    .assignment .assignment-content .card .box .as6 {
+        width: 350px;
+    }
+    .assignment .assignment-content .card .box .as7 {
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:378px) {
+    .about .about-content .left img {
+        height: 200px;
+        width: 200px;
+    }
+    .skills .skills-content .card {
+        width: calc(100% - 20px);
+    }
+    .teams .title::after {
+        font-size: 15px;
+    }
+    .teams .teams-content .card {
+        width: calc(100% - 20px);
+    }
+    .assignment .title::after {
+        font-size: 15px;
+    }
+    .assignment .assignment-content .card {
+        width: calc(100% - 20px);
+    }
+    .assignment .assignment-content .card .box .as4 {
+        width: 200px;
+    }
+    .assignment .assignment-content .card .box .as5 {
+        width: 200px;
+    }
+    .assignment .assignment-content .card .box .as6 {
+        width: 200px;
+    }
+    .assignment .assignment-content .card .box .as7 {
+        width: 200px;
+        object-fit: cover;
+    }
+    .assignment .title::after {
+        font-size: 12px;
+        bottom: 15;
+    }
+}
+
+.active {
+    left: 0;
+}

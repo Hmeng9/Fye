@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Playfair+Display&display=swap');
+body{
+    background-color: #ffefef;
+    font-family: 'Benne', serif;
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+}
+.grid-container{
+    display: grid;
+    /* grid-template-columns: auto;
+    grid-gap: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background-color:#ffb3bf; */
+    grid-template-areas: 
+    "first"
+    "second"
+    "third"
+    ;
+    grid-template-columns: auto;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 24px;
+}
+.grid-container >div{
+
+    border: 1px solid black;
+}
+#header{
+    grid-area: first;
+    text-align: center;
+}
+#content{
+   grid-area: second;
+}
+.content-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.ingredients{
+    background-color: #b37d8b;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.menu{
+    display: grid;
+}
+.content-1 >img{
+width: 300px;
+border-radius: 30px;
+margin-left: 100px;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+}
+.process{
+    background-color: #b37d8b;
+    border-radius: 30px;
+    font-size: 15px;
+}
+#footer{
+    grid-area: third;
+    text-align: center;
+}
+.serve{
+    background-color: #b37d8b;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.img >img{
+width: 20%;
+border-radius: 30px;
+margin: 5px;
+}
+@media screen and (max-width:568px){
+    .content-1 >img{
+        margin-left: 50px;
+        width: 50%;
+        height: fit-content;
+}
+}
+@media screen and (max-width:384px){
+    .content-1 >img{
+        margin-left: 20px;
+
+}
+}
